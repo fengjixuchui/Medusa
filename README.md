@@ -9,9 +9,6 @@ Testing working on **Debian**, **Ubuntu**, **CentOS 5.x**, **CentOS 6.x**, **Cen
 - PAM backdoor
 - Hide all ports used by Medua
 - Log all SSH and PAM authentications in plain-text
-- Support identification, interpretation, fliter of the HTML tags;
-- Support TeX (LaTeX expressions, Based on KaTeX), Flowchart and Sequence Diagram of Markdown extended syntax;
-- Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
 
 ### LIBC Function Hooks
 
