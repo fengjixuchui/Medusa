@@ -1,5 +1,4 @@
 ![](https://files.catbox.moe/dzc09n.png)
-
 ### Description
 Yet Another LD_PRELOAD Rootkit. **Medusa** is a usermode LD_PRELOAD rootkit for Linux systems x86 and x64, and is installed via ELF and is very cross-platform compatible. **Medusa** also uses **MidgetPacker** for packing the ELF to avoid scan-time detection. All strings, and rootkit configuration is "crypted" with XOR.
 
