@@ -1,18 +1,26 @@
-![](https://files.catbox.moe/dzc09n.png)
-### Description
-Yet Another LD_PRELOAD Rootkit. **Medusa** is a usermode LD_PRELOAD rootkit for Linux systems x86 and x64, and is installed via ELF and is very cross-platform compatible. **Medusa** also uses **MidgetPacker** for packing the ELF to avoid scan-time detection. All strings, and rootkit configuration is "crypted" with XOR.
+> Paralyze resistance with persistence.
+<p align="center">
 
-### Features
-- PAM backdoor
-- Hide all ports used by Medua
-- Log all SSH and PAM authentications in plain-text
+![](https://files.catbox.moe/q78mg1.png)
 
-### Modules (coming soon)
+</p>
+
+# **Description**
+Medusa is a powerful, stealthy, verastile, and, modular rootkit designed to give attackers complete "unbreakble" control over Linux systems. Medusa is compiled and ready to be executed as a small ELF executable file, which no means extra building or configuration requirements! Medusa is larger than a few hundred kilobytes in size. Once installed, the rootkit sets up a dynamic linker that modifies the way applications are loaded and executed on the system. At this point the Medusa hooks a plethora of API system calls, library functions and signal handlers to achieve imbreakable and uninterceptable persistence. Medusa intercepts a plethoa of system calls made by all applications on the Medusa infected machine.. Hooking these system calls allows a Medusa to control and modify the behavior when system call is made. For example, with `stat()` family calls, a user can specify what information should be returned when those calls are made, or make changes to the permissions of files and directories. With `access()`, the user can control who has permission to what areas of the system. With `write()`, `read()`, `open()`, and their derivatives, Medusa can control what files and directories are accessed by the system, and what data is written to them. Truncate and `chmod()` / `chown()` allows for control over how files and directories are manipulated. Pututxline, updwtmp, and pututline are used for managing user logins and account information. Host
+
+# Features
+- PAM Backdoor
+PAM backdoor
+By hijacking libpam & libc's authentication functions, we are able to create a phantom backdoor user.
+Hide all ports used by Medusa
+Log all SSH and PAM authentications in plain-text
+
+# Modules (coming soon)
 - Reverse Socks5
-- HTTP 
 
-### LIBC Function Hooks
+# LIBC Function Hooks
 - stat
+
 - xstat/xstat64
 - lxstat/lxstat64
 - lstat/lstat64
@@ -50,7 +58,7 @@ Yet Another LD_PRELOAD Rootkit. **Medusa** is a usermode LD_PRELOAD rootkit for 
 - stat64
 - prctl
 
-#### Build And Deploy
+# **Building And Deployment**
 
 Change the settings you want in **src/config.c** this includes your username and password that will be used to access the backdoor deployed by Medusa. 
 
