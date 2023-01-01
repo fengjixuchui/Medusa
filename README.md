@@ -10,19 +10,14 @@ Medusa is a powerful, stealthy, verastile, and, modular rootkit designed to give
 
 # &lceil;**Features**&rceil;
 - **PAM Backdoor**
-
 &rarr; Hook libpam authentication system calls for persisting with a hidden root user
 - **Anti-Debugging**
-
 &rarr; Hide it's self from process memory map
 - **File Hiding**
-
 &rarr; Hide it's self from process memory map
 - **Network Hiding**
-
 &rarr; Hide it's self from process memory map
 - **Auth Logging**
-
 &rarr; Hooks `syslog()` and `pam_syslog` to log all successful authentications locally, or    remotely via SSH to Medusa home directory
 
 # &lceil;**Modules**&rceil;
